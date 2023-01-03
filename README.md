@@ -37,10 +37,8 @@ SMTP_PORT=25
 SMTP_LOGIN=
 SMTP_PASSWORD=
 SMTP_FROM_ADDRESS=notifications@example.com
-WATCHTOWER_NOTIFICATIONS=email
-WATCHTOWER_NOTIFICATION_EMAIL_TO=
 ```
 
-To generate keys for SECRET_KEY_BASE & OTP_SECRET run docker run --rm -it -w /app/www --entrypoint rake lscr.io/linuxserver/mastodon secret once for each.
+To generate keys for SECRET_KEY_BASE & OTP_SECRET run `docker run --rm -it -w /app/www --entrypoint rake lscr.io/linuxserver/mastodon secret` once for each.
 
-To generate keys for VAPID_PRIVATE_KEY & VAPID_PUBLIC_KEY run docker run --rm -it -w /app/www --entrypoint rake lscr.io/linuxserver/mastodon mastodon:webpush:generate_vapid_key
+To generate keys for VAPID_PRIVATE_KEY & VAPID_PUBLIC_KEY run `docker run --rm -it -w /app/www --entrypoint rake lscr.io/linuxserver/mastodon mastodon:webpush:generate_vapid_key`
