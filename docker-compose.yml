@@ -69,7 +69,7 @@ services:
   # PostgreSQL Relational Database for Mastodon
   # --------------------------------------------
   db_mastodon:
-    image: postgres:15
+    image: postgres:15-bullseye
     container_name: db_mastodon
     restart: unless-stopped
     logging:
