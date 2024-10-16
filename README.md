@@ -42,3 +42,5 @@ SMTP_FROM_ADDRESS=notifications@example.com
 To generate keys for SECRET_KEY_BASE & OTP_SECRET run `docker run --rm -it -w /app/www --entrypoint rake lscr.io/linuxserver/mastodon secret` once for each.
 
 To generate keys for VAPID_PRIVATE_KEY & VAPID_PUBLIC_KEY run `docker run --rm -it -w /app/www --entrypoint rake lscr.io/linuxserver/mastodon mastodon:webpush:generate_vapid_key`
+
+To generate keys for ACTIVE_RECORD_ENCRYPTION_DETERMINISTIC_KEY, ACTIVE_RECORD_ENCRYPTION_KEY_DERIVATION_SALT, & ACTIVE_RECORD_ENCRYPTION_PRIMARY_KEY run docker run --rm -it --entrypoint /bin/bash lscr.io/linuxserver/mastodon:latest generate-active-record
